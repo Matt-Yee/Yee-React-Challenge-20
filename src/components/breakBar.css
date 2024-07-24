@@ -1,0 +1,37 @@
+.break-bar {
+    display: grid;
+    grid-template-columns: 1fr 3fr; 
+    height: 25vh; 
+    gap: 20px; 
+    background-color: #333;
+    padding: 20px;
+  }
+  
+  .image {
+    grid-column: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .image:hover {
+    transform: scale(1.1);
+    overflow: visible;
+  }
+
+  .text {
+    grid-column: 2;
+    background-color: #f7f7f7;
+    padding: 10px;
+    clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.212);
+    font-size: 18px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    text-align: left;
+  
+  }
